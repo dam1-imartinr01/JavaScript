@@ -1,0 +1,19 @@
+
+
+body div:nth-child(1){
+        border: dodgerblue solid 2px;
+
+}
+.articulo{
+    width:20%;
+    height:30%;
+
+
+}
+.titular{
+    border: brown solid 2px;
+}
+.contenido{
+   display:none;
+}
+

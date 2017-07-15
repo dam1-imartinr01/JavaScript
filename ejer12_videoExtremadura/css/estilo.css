@@ -1,0 +1,46 @@
+
+/* 
+  
+    Author     : Ismael Martín Ramírez [imartinr01@informatica.iesvalledeljerteplasencia.es]
+*/
+
+body{
+    margin:0px;
+}
+
+video{
+
+    margin:0px;
+
+    width:100%;
+    
+}
+
+.leyenda{
+
+    height: 400px;
+    width: 220px;
+
+    padding:5px;
+
+    border: aquamarine solid 3px;
+    border-radius: 20px;
+
+    color:cornsilk;
+    background: darkseagreen;
+    opacity: 0.5;
+
+
+    position: absolute;
+    right: 50px;
+    top: 40px;
+
+    overflow: hidden;
+    font-family: fantasy;
+    font-size:18px;
+    
+
+
+
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora Si</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ismael Martín Ramírez" />
+        <link href="estilo/css.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+        <p>
+            <button onclick="mostrarCalculadora('calculadora', '1', '100px', '300px')">Abrir ventana<img src="imagen/iconocalculadora.jpg" alt=""/></button><br />
+            <button onclick="mostrarCalculadora('calculadora', '0', '0px', '0px')">Cerrar ventana</button>
+        </p>
+
+        <div id="calculadora">
+
+            <div>
+                <input type="submit" value=" X " onclick="mostrarCalculadora('calculadora', '0', '0px', '0px')">
+                <input id="operacion" type="text" name="Resultado: " value=""><br />
+                <input type="submit" value="1" onclick="operaciones(this.value, 'operacion')">
+                <input type="submit" value="2" onclick="operaciones(this.value, 'operacion')">
+                <input type="submit" value="3" onclick="operaciones(this.value, 'operacion')">
+                <input class="tecla" type="submit" value="+" onclick="operaciones(this.value, 'operacion')"><br />
+                <input type="submit" value="4" onclick="operaciones(this.value, 'operacion')">
+                <input type="submit" value="5" onclick="operaciones(this.value, 'operacion')">
+                <input type="submit" value="6" onclick="operaciones(this.value, 'operacion')">
+                <input class="tecla" type="submit" value="-" onclick="operaciones(this.value, 'operacion')"><br />
+                <input type="submit" value="7" onclick="operaciones(this.value, 'operacion')">
+                <input type="submit" value="8" onclick="operaciones(this.value, 'operacion')">
+                <input type="submit" value="9" onclick="operaciones(this.value, 'operacion')">
+                <input class="tecla" type="submit" value="*" onclick="operaciones(this.value, 'operacion')"><br />
+                <input type="submit" value="0" onclick="operaciones(this.value, 'operacion')">
+                <input class="tecla" type="submit" value="(" onclick="operaciones(this.value, 'operacion')">
+                <input class="tecla" type="submit" value=")" onclick="operaciones(this.value, 'operacion')">
+                <input class="tecla" type="submit" value="." onclick="operaciones(this.value, 'operacion')"><br />
+            </div>
+
+
+            <input  class="igual" type="submit" value="=" onclick="resultado(operacion)">
+            <input  class="limpiar" type="submit" value=" C " onclick="limpiar()"><br />
+        </div>
+
+        <script src="js/calculadora.js" type="text/javascript"></script>
+    </body>
+</html>

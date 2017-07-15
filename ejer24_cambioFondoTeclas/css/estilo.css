@@ -1,0 +1,75 @@
+
+/* 
+    Created on : 09-may-2017
+    Author     : Ismael Martín Ramírez [imartinr01@informatica.iesvalledeljerteplasencia.es]
+*/
+
+body{
+    padding:0px;
+    margin:0px;
+}
+
+/* Caja para el listado de colores */
+#cabecera{
+    width:100%;
+    height:40px;
+    
+    padding-bottom: 25px;
+
+    text-align:center;   
+    
+    overflow-x: auto;
+}
+
+#cabecera span{   
+    padding:15px;
+    margin:10px;      
+    margin-top: -1px; 
+    border:white solid 1px;
+
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px; 
+
+    cursor:pointer;
+}
+
+#cabecera span:hover{
+    transition-duration:0.5s;    
+    border-color:black;
+    padding-bottom: 25px;
+}
+
+/* Caja con el nombre del color */
+body div:nth-child(2){
+    margin-top:16%;
+}
+#nomColor{   
+    color:white;    
+
+    font: oblique bold 40px cursive;
+    text-align: center;
+    text-transform: uppercase;   
+}
+
+/* Pie de página */
+footer{
+    width:150px;
+    height:130px;
+
+    border-top:#F1F1F1 solid 5px; 
+
+    position: fixed;    
+    bottom: 1%;
+    left:1%;
+
+    z-index:-1;    
+
+    font:oblique bold 14px cursive;
+    text-decoration:none;
+
+    cursor:default;
+}
+footer a{
+    color:coral;
+    text-decoration:none;
+}

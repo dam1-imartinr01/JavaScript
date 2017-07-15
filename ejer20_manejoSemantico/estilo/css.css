@@ -1,0 +1,13 @@
+
+
+
+#interfaz{
+    border:brown solid 3px;
+    padding:5px;
+    margin:20px;
+}
+body div:nth-child(1){
+    border:firebrick solid 4px;
+    padding:20px;
+    
+}

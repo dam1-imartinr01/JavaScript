@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            div input{
+                width:35px;
+                height:35px;
+            }
+            botones{
+
+            }
+            .tecla{
+
+            }
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="calculadora">
+            <div class="botones">
+                <input type="submit" value="1" onclick="document.getElementById('operacion').value += 1">
+                <input type="submit" value="2" onclick="document.getElementById('operacion').value += 2">
+                <input type="submit" value="3" onclick="document.getElementById('operacion').value += 3">
+                <input type="submit" value="+" onclick="document.getElementById('operacion').value += '+'"><br />
+                <input type="submit" value="4" onclick="document.getElementById('operacion').value += 4">
+                <input type="submit" value="5" onclick="document.getElementById('operacion').value += 5">
+                <input type="submit" value="6" onclick="document.getElementById('operacion').value += 6">
+                <input type="submit" value="-" onclick="document.getElementById('operacion').value += '-'"><br />
+                <input type="submit" value="7" onclick="document.getElementById('operacion').value += 7">
+                <input type="submit" value="8" onclick="document.getElementById('operacion').value += 8">
+                <input type="submit" value="9" onclick="document.getElementById('operacion').value += 9">
+                <input type="submit" value="*" onclick="document.getElementById('operacion').value += '*'"><br />
+                <input type="submit" value="0" onclick="document.getElementById('operacion').value += 0">
+                <input type="submit" value="(" onclick="document.getElementById('operacion').value += '('">
+                <input type="submit" value=")" onclick="document.getElementById('operacion').value += ')'">
+                <input type="submit" value="." onclick="document.getElementById('operacion').value += '.'"><br />
+            </div>
+
+            Expresion:<input id="operacion" type="text" name="Resultado: " value=""><br />
+            Resultado:<input id="resultado" type="text" name="Expresion:" value="" ><br />
+            <input type="submit" value="calcular" onclick="document.getElementById('resultado').value = eval(document.getElementById('operacion').value)"><br />
+            <input type="submit" value="limpiar" onclick="document.getElementById('operacion').value = '';document.getElementById('resultado').value = ''"><br />
+        </div>
+        <script>
+
+
+        </script>
+
+    </body>
+</html>

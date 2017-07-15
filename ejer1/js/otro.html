@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .ejemplo{
+                height:60px;
+                width:60px;
+                background-color: red;
+            }
+            .ejemplo2{
+                height:60px;
+                width:60px;
+                background-color: blue;
+
+            }
+
+            .calcular{
+                height:60px;
+                width:60px;
+                background-color: greenyellow;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <script src="codigo.js" type="text/javascript"></script>
+        <div  class="ejemplo" onclick="mostrarMensaje('rojo');"></div>
+        <div class="ejemplo2" onclick="mostrarMensaje('azul');"></div>
+
+        <div onclick="suma(1, 5)">1+5</div>
+
+        <div class="calcular" onclick="document.getElementById('resultado').innerHTML =suma(document.getElementById('a').innerHTML,document.getElementById('b').innerHTML)">
+            <span id="a">3</span>+<span id="b">2</span>=<span id="resultado"></span>
+        </div>
+
+    </body>
+</html>

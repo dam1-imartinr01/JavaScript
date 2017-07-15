@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Eventos</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Ismael Martín" />
+
+        <!--    <base href = "http://www.lmsgi.iesvjp.es/~imartinr/CSS/" target = "vtr" />   -->
+        <!--        <link href="css/estilo.css" type="text/css" rel="stylesheet" title="Estilo Cuaderno" media="all"/> -->
+
+        <style>
+            div{
+                margin-left:35%;
+                padding:10px;
+                height:50px;
+                width:400px;
+                background-color:bisque;
+                list-style:none;
+                border:red solid 1px;
+                text-justify:auto;
+            }
+        </style>
+    </head>
+    <body onload="texto('Pagina cargada con éxito')" onunload="texto('Pagina cargada con éxito');">
+
+        <script>
+            function texto(mensaje) {
+                alert(mensaje);
+            }
+        </script>
+
+        <div>
+            Onload - Ocurre al tenerminar de cargar la pagina
+        </div>
+
+        <div>
+            Onunload - Eliminacion de una ventana.
+        </div>
+
+        <div onclick="texto('Pulsaste en Onclick')">
+            Onclick - Evento que ocurre al hacer click
+        </div>
+        
+        <div ondblclick="texto('Pulsaste dos veces')">
+            ondblclick - Evento que ocurre al pulsar dos veces.
+        </div>
+
+
+
+
+
+    </body>
+</html>

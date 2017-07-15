@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Valle de Ambroz</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Ismael Martín" />
+
+        <!--    <base href = "http://www.lmsgi.iesvjp.es/~imartinr/CSS/" target = "vtr" />   -->
+        <link href="css/estilo.css" type="text/css" rel="stylesheet" title="Estilo Cuaderno" media="all"/> 
+
+    </head>
+
+    <body>
+
+        <video id="video" preload="" autoplay="" loop="" src="videos/ext.mp4" >
+        </video>
+
+
+        <div class="leyenda">          
+            El Valle del Ambroz es un lugar de contrastes, con montañas que superan los 2.000 metros y tienen nombre propio como el Pinajarro, el Valdeamor o El Camocho, y zonas de vega y dehesa a solo 500 metros de altitud. Con abundancia de agua, gargantas y ríos, la Garganta Ancha, el río Santihervás o el río Ambroz, que da nombre al valle.          
+
+            <button onclick="play()" type="button">Play Video</button>
+            <button onclick="pause()" type="button">Pause Video</button><br>
+        </div>
+
+    </body>  
+    <script>
+        var video = document.getElementById("video");
+        function play() {
+            video.play();
+        }
+        function pause() {
+            video.pause();
+        }
+    </script>
+</html>
+

@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-abr-2017, 9:39:32
+    Author     : Ismael Martín Ramírez [imartinr01@informatica.iesvalledeljerteplasencia.es]
+*/
+
+#calculadora{
+    width:155px;
+    height:255px;
+    border:red solid 2px;
+    background-color:grey;
+    opacity:0;
+    
+    position:absolute;
+    left:70%;
+    top:10%;
+}
+div input{
+    width:35px;
+    height:35px;
+}
+.botones{
+    width:45px;
+}
+.tecla{
+    color:red;
+}
+#operacion{
+    width:150px;
+}
+.igual{
+    width:113px;
+}
+.limpiar{
+    width:35px;
+}
+img{
+   width:35px;
+    height:35px; 
+}
