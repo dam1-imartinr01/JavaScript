@@ -1,16 +1,16 @@
 
 /* 
  Created on : 09-may-2017
- Author     : Ismael Martín Ramírez [imartinr01@informatica.iesvalledeljerteplasencia.es]
+ Author     : Ismael Martin Ramirez [imartinr01@informatica.iesvalledeljerteplasencia.es]
  */
 
-/*Función para validar que se está pulsando la tecla espacio(32). 
- Si es así cambiará el color de fondo.*/
+/*Funcion para validar que se esta pulsando la tecla espacio(32). 
+ Si es asi cambiara el color de fondo.*/
 function validacionTecla(evObject) {
     var teclaPulsada = evObject.keyCode;
 
     if (teclaPulsada === 32) {
-        //Animación.
+        //Animacion.
         setTimeout(cambiarTexto, 0);
         setTimeout(cambiarTexto, 100);
         setTimeout(cambiarTexto, 200);
@@ -29,13 +29,13 @@ function validacionTecla(evObject) {
     }
 }
 
-//Función para la animación.
+//Funcion para la animacion.
 function cambiarTexto() {
     var color = "rgb(" + aleatorio() + "," + aleatorio() + "," + aleatorio() + ")";
     document.querySelector("#nomColor").innerHTML = "<p>" + color + "</p>";
 }
 
-//Función para cambiar el color de fondo y añadir etiquetas de los colores en la cabecera.
+//Funcion para cambiar el color de fondo y añadir etiquetas de los colores en la cabecera.
 function cambiarColor() {
     //Obtiene el color de fondo.Conversor retorna el color en hexagesimal
     var colorRgb = "rgb(" + aleatorio() + "," + aleatorio() + "," + aleatorio() + ")";
@@ -43,20 +43,20 @@ function cambiarColor() {
 
     //Cambia el color de fondo y el nombre del color.
     document.querySelector("body").style.backgroundColor = colorRgb;
-    document.querySelector("#nomColor").innerHTML = "<p><span>" + colorRgb + "</span><br /><span>" + colorHexa + "</span>";
+    document.querySelector("#nomColor").innerHTML = "<p><span>" + colorRgb + "</span><br /><span>" + colorHexa + "</span></p>";
 
     //Incluye un <span> en la cabecera, además de los que hay, con estilo y un evento onclick JS.
     document.querySelector("#cabecera").innerHTML += "<span style=background-color:" + colorRgb + "; onclick=opcionesCabecera('" + colorRgb + "','" + colorHexa + "');> </span>";
 }
 
-//Función para dar funcionalidad a las etiquetas de colores en la cabecera.
+//Funcion para dar funcionalidad a las etiquetas de colores en la cabecera.
 function opcionesCabecera(colorRgb, colorHexa) {
     document.querySelector("body").style.backgroundColor = colorRgb;
-    document.querySelector("#nomColor").innerHTML = "<p><span>" + colorRgb + "</span><br /><span>" + colorHexa + "</span>";
+    document.querySelector("#nomColor").innerHTML = "<p><span>" + colorRgb + "</span><br /><span>" + colorHexa + "</span></p>";
 }
 
-//Función para convertir el colorRgb a colorHexagesimal.
-// Retorna el color en Hexagesimal.
+/*Funcion para convertir el colorRgb a colorHexagesimal.
+ Retorna el color en Hexagesimal.*/
 function conversor(colorRgb) {
     //Se obtienen los valores del color rgb por separado.
     var decimal = colorRgb.toString();
@@ -80,13 +80,13 @@ function conversor(colorRgb) {
     return hexadecimal;
 }
 
-//Función para crear números aleatorios.
+//Funcion para crear numeros aleatorios.
 function aleatorio() {
-    var num = Math.floor((Math.random() * 250) * 1);
+    var num = Math.floor((Math.random() * 251));
     return num;
 }
 
-//Función de activación de eventos.
+//Funcion de activacion de eventos.
 window.onload = function () {
     cambiarColor();
 
