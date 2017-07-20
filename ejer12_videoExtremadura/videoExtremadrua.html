@@ -12,13 +12,17 @@
 
     <body>
 
-        <video id="video" preload="" autoplay="" loop="" src="videos/ext.mp4"></video>       
+        <video id="video" preload="" autoplay="" loop="" src="videos/ext.mp4" muted="true"></video>       
 
         <div class="leyenda">          
             El Valle del Ambroz es un lugar de contrastes, con montañas que superan los 2.000 metros y tienen nombre propio como el Pinajarro, el Valdeamor o El Camocho, y zonas de vega y dehesa a solo 500 metros de altitud. Con abundancia de agua, gargantas y ríos, la Garganta Ancha, el río Santihervás o el río Ambroz, que da nombre al valle.          
-<br /><br />
-            <button onclick="play()" type="button">Play</button><br />
-            <button onclick="pause()" type="button">Pause</button>
+    <br />
+            <button onclick="play()" type="button">Play</button>
+            <button onclick="pause()" type="button">Pause</button><br />
+            <button onclick="sonido()" type="button">Sonido</button>
+            <button onclick="noSonido()" type="button">No Sonido</button>
+
+
         </div>
 
         <script>
@@ -28,6 +32,14 @@
             }
             function pause() {
                 video.pause();
+            }
+
+            function sonido() {
+                document.querySelector("#video").muted = false;
+            }
+
+            function noSonido() {
+                document.querySelector("#video").muted = true;
             }
         </script>
     </body> 
