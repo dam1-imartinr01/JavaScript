@@ -13,10 +13,10 @@ and open the template in the editor.
     height:255px;
     border:red solid 2px;
     background-color:grey;
-    opacity:0;
+    opacity:1;
     
     position:absolute;
-    left:70%;
+    left:10%;
     top:10%;
 }
 div input{
